@@ -7,14 +7,14 @@ spec:
   project: default
   sources:
     - repoURL: 'https://charts.bitnami.com/bitnami'
-      targetRevision: 16.7.27
       chart: postgresql
-    - repoURL: 'https://github.com/juantraverso17/deployment-manos.git'
-      targetRevision: main
-      path: posgresql
+      targetRevision: 16.7.27
       helm:
         valueFiles:
-          - values-16.7.27.yaml
+          - $values/posgresql/values-16.7.27.yaml
+    - repoURL: 'https://github.com/juantraverso17/deployment-manos.git'
+      targetRevision: main
+      ref: values
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: postgresql
