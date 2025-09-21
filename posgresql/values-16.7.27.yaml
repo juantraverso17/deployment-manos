@@ -21,9 +21,9 @@ global:
   postgresql:
     auth:
       postgresPassword: ""
-      username: "manos"
+      username: "sgs_user"
       password: ""
-      database: ""
+      database: "sgs_manos"
       existingSecret: "postgresql-credentials"
       secretKeys:
         adminPasswordKey: "adminPasswordKey"
