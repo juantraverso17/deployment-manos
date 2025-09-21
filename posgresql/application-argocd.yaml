@@ -9,7 +9,7 @@ spec:
     - repoURL: 'https://charts.bitnami.com/bitnami'
       targetRevision: 16.7.27
       chart: postgresql
-    - repoURL: 'https://github.com/mi-org/repo-helm-values.git'
+    - repoURL: 'https://github.com/juantraverso17/deployment-manos.git'
       targetRevision: main
       path: posgresql
       helm:
